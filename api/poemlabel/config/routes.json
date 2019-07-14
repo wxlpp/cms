@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/poemlabels",
+      "handler": "Poemlabel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/poemlabels/count",
+      "handler": "Poemlabel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/poemlabels/:_id",
+      "handler": "Poemlabel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/poemlabels",
+      "handler": "Poemlabel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/poemlabels/:_id",
+      "handler": "Poemlabel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/poemlabels/:_id",
+      "handler": "Poemlabel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

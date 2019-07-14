@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "poem",
+  "info": {
+    "name": "poem",
+    "description": "诗"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "无名诗"
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "annotate": {
+      "type": "text"
+    },
+    "translation": {
+      "type": "text"
+    },
+    "source": {
+      "type": "string"
+    },
+    "era": {
+      "type": "string"
+    },
+    "labels": {
+      "collection": "poemlabel",
+      "via": "poem"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "label",
+  "info": {
+    "name": "PoemLabel",
+    "description": " 标签"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "poem": {
+      "model": "poem",
+      "via": "labels"
+    }
+  }
+}
